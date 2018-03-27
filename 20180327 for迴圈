@@ -1,0 +1,52 @@
+
+==============================================
+#include <stdio.h>
+ 
+int main ()
+{
+   
+   for( int a = 10; a < 20; a = a + 1 )
+   {
+      printf("a 的值： %d\n", a);
+   }
+ 
+   return 0;
+}
+
+=============================================
+c語言
+循環執行
+=============================================
+#include <iostream>
+using namespace std;
+ 
+int main ()
+{
+   
+   for( int a = 10; a < 20; a = a + 1 )
+   {
+       cout << "a 的值：" << a << endl;
+   }
+ 
+   return 0;
+}
+==============================================
+c++
+如果條件符合就執行迴圈，如果不符合就跳出這迴圈
+=============================================
+public class Test {
+   public static void main(String args[]) {
+ 
+      for(int x = 10; x < 20; x = x+1) {
+         System.out.print("value of x : " + x );
+         System.out.print("\n");
+      }
+   }
+}
+=============================================
+java
+
+
+
+
+
