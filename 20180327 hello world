@@ -1,0 +1,38 @@
+================================
+#include <stdio.h>
+ 
+int main()
+{
+    
+    printf("Hello, World! \n");
+ 
+    return 0;
+}
+================================
+//我的第一個c語言
+//所有c語言程式都必須有main函數
+//printf 格式化之後，輸出到螢幕上
+==============================
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Hello, world!" << endl;
+    return 0;
+}
+
+==============================
+C++
+//   "\n"  '\n' 輸出效果是相同
+==================================
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+
+=====================================
+java
+目的:輸出顯示Hello World
