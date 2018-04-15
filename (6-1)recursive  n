@@ -1,0 +1,17 @@
+c語言 遞迴
+=================================================
+#include<stdio.h>
+#include<stdlib.h>
+int sum(int n)
+{
+    int i, sum=0;
+    for(i=0; i!=n; ++i) sum+=i;
+    return sum;
+}
+
+int sumr(int n)
+{
+    return (n<=0)?0:( n+sumr(n-1) );
+}
+
+================================================================
