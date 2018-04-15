@@ -1,0 +1,26 @@
+
+
+#include<stdio.h>
+    #include<stdlib.h>
+    int Fibonacci(int n);
+    int main()
+    {
+        int i,n,f;
+        printf("請輸入想算出第幾個費氏數\n");
+        scanf("%d",&n);
+        f=Fibonacci(n);
+      printf("F[%d]=%d ",n,f);
+       printf("\n");
+       system("pause");
+      return 0;
+   }
+   int Fibonacci(int n)
+   {
+       int f;
+      /*指定f[0]=0;f[1]=1*/ 
+       if(n==0)f=0;
+       else if(n==1)f=1;
+      /*f[n]=f[n-2]+f[n-1];*/
+       else if(n>=2)f=Fibonacci(n-2)+Fibonacci(n-1);
+      return f;
+  }
