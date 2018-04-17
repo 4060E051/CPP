@@ -1,0 +1,52 @@
+#include <iostream>
+
+using namespace std;
+
+const int row=3;
+const int col=3;
+
+void addMatrix(int [row][col],int [row][col],int [row][col]);
+void printMatrix(int [row][col]);
+
+void printMatrix(int printTarget[row][col])
+{
+	for(int i=0;i<row;i++)
+	{
+		for(int j=0;j<col;j++)
+		{
+			printf("%d\t",printTarget[i][j]);
+		}
+		printf("\n");
+		
+		
+	}
+		
+}
+void addMatrix(int Arra1[row][col],int Arra2[row][col],int Arra3[row][col])
+
+{
+	for(int i=0;i<row;i++)
+	{
+			for(int j=0;j<col;j++)
+		{
+				Arra3[i][j]=Arra1[i][j]+Arra2[i][j];
+			
+		}
+						
+	}
+}
+
+int main(void)
+
+{
+	
+	int a[row][col]={1,2,3,4,5,6,7,8,9};
+	int b[row][col]={1,2,3,4,5,6,7,8,9};
+	int c[row][col]={0};
+	
+	addMatrix(a,b,c);
+	printMatrix(c);
+
+	system("pause");
+}
+
