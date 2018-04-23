@@ -1,46 +1,25 @@
-#include<iostream.h>
-#include<math.h>
-int a[2][2],b[2][2],c[2][2];
- 
-void input()
-{
-for (int i=0;i<=1;i++){
-for (int j=0;j<=1;j++)
-{
-cout<<"請輸入a["<<i+1<<"]["<<j+1<<"]=";
-cin>>a[i][j];
-cout<<endl
-<<"請輸入b["<<i+1<<"]["<<j+1<<"]=";
-cin>>b[i][j];
-cout<<endl; 
-}
-}
-}
-void input2()
-{
-input(); 
-for(int x=0;x<2;x++) {
-for(int y=0;y<2;y++) {
-for(int m=0;m<2;m++) {
-c[x][y]+=a[x][m]*b[m][y];
-}
-}
-}
-}
-void main()
-{
-char x='y';
-while (x=='y'||x=='Y')
-{
-input2();
-for (int i=0;i<=1;i++){
-for (int j=0;j<=1;j++){
-cout<<"c["<<i+1<<"]["<<j+1<<"]="<<c[i][j]<<"\t";
-}
-cout<<endl;
-}
-cout<<"Do you want to try again?(y/n)";
-cin>>x;
-cout<<endl;
-}
-}
+#include <iostream>  
+
+void MultiplyWithOutAMP() {  
+
+    int aMatrix[3][2] = {{1, 4}, {2, 5}, {3, 6}};  
+    int bMatrix[2][3] = {{7, 8, 9}, {10, 11, 12}};  
+    int product[3][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};  
+
+    for (int row = 0; row < 3; row++) {  
+        for (int col = 0; col < 3; col++) {  
+            // Multiply the row of A by the column of B to get the row, column of product.  
+            for (int inner = 0; inner < 2; inner++) {  
+                product[row][col] += aMatrix[row][inner] * bMatrix[inner][col];  
+            }  
+            std::cout << product[row][col] << "  ";  
+        }  
+        std::cout << "\n";  
+    }  
+}  
+
+int main() {  
+    MultiplyWithOutAMP();  
+    getchar();  
+}  
+
