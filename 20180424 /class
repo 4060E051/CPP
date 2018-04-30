@@ -2,19 +2,19 @@
  
 using namespace std;
  
-class ass {
+class as {
 public:
     int a;
     int b;
     int do_something();
 };
  
-int ass::do_something() {
+int as::do_something() {
     return a + b;
 }
  
 int main(void) {
-    ass t;
+    as t;
     t.a = 11;
     t.b = 22;
   
