@@ -1,0 +1,26 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+class ass {
+public:
+    int a;
+    int b;
+    int do_something();
+};
+ 
+int ass::do_something() {
+    return a + b;
+}
+ 
+int main(void) {
+    ass t;
+    t.a = 11;
+    t.b = 22;
+  
+    cout << endl;
+    cout << t.do_something() << endl;
+    cout << endl;
+     
+    return 0;
+}
