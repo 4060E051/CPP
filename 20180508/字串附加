@@ -1,0 +1,21 @@
+#include<iostream> 
+#include<string>
+using namespace std;
+
+int main(){
+	string s1("welcome");
+	s1.append(" to c++");
+	cout<< s1 << endl;
+	
+	string s2("welcome");
+	s2.append(" to c and c++",13);
+	cout << s2 <<endl;
+	
+	string s3("welcome");
+	s3.append(5, 'j' );
+	cout<< s3 <<endl;
+	
+	
+	
+	return 0;
+}
