@@ -5,10 +5,10 @@ int main()
 {
     // various constructor of string class
  
-    // initialization by raw string
+    // initialization by raw string   //定義  string一個first string 字串裡。
     string str1("first string");
  
-    // initialization by another string
+    // initialization by another string    //定義 string 一個first string字串裡。
     string str2(str1);
  
     // initialization by character with number of occurence
