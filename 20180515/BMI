@@ -55,9 +55,9 @@ private:
 using namespace std;
 
 BMI::BMI(const string& newName, int newAge, 
-  double newWeight, double newHeight)
+  double newWeight, double newHeight)    //宣告newweight
 {
-  name = newName;
+  name = newName;//設定數值
   age = newAge;
   weight = newWeight;
   height = newHeight;
@@ -73,14 +73,14 @@ BMI::BMI(const string& newName, double newWeight, double newHeight)
 
 double BMI::getBMI() const
 {
-  const double KILOGRAMS_PER_POUND = 0.45359237;
+  const double KILOGRAMS_PER_POUND = 0.45359237;//
   const double METERS_PER_INCH = 0.0254;
   double bmi = weight * KILOGRAMS_PER_POUND /
     ((height * METERS_PER_INCH) * (height * METERS_PER_INCH));
   return bmi;
 }
 
-string BMI::getStatus() const
+string BMI::getStatus() const   //
 {
   double bmi = getBMI();
   if (bmi < 18.5)
@@ -93,17 +93,17 @@ string BMI::getStatus() const
     return "Obese";
 }
 
-string BMI::getName() const
+string BMI::getName() const//
 {
   return name;
 }
 
-int BMI::getAge() const
+int BMI::getAge() const//
 {
   return age;
 }
 
-double BMI::getWeight() const
+double BMI::getWeight() const//
 {
   return weight;
 }
