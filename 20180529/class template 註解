@@ -34,20 +34,20 @@ bool StackOfIntegers::isEmpty() const //測試是否為空的實作
 
 int StackOfIntegers::peek() const    //取出最上層資料的實作 
 {
-  return elements[size - 1];
+  return elements[size - 1];           //代表堆疊最上方元素的牽引 
 }
 
 void StackOfIntegers::push(int value)
 {
-  elements[size++] = value;
+  elements[size++] = value;           //回傳後再增加大小 
 }
 
 int StackOfIntegers::pop()
 {
-  return elements[--size];
+  return elements[--size];        //回傳後前置減少大小     
 }
 
-int StackOfIntegers::getSize() const
+int StackOfIntegers::getSize() const       //取得StackOfIntegers的資料大小 
 {
   return size;
 }
