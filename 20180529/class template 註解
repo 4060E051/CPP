@@ -62,11 +62,11 @@ int main()
 {
   StackOfIntegers stack;
 
-  for (int i = 0; i < 10; i++)          
-    stack.push(i);                         //
+  for (int i = 0; i < 10; i++)   //       
+    stack.push(i);                         //隨著迴圈增加資料
 
   while (!stack.isEmpty())
-    cout << stack.pop() << " ";
+    cout << stack.pop() << " ";     //顯示出最上面的資料的函數
 
   return 0;
 }
