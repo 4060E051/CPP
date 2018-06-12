@@ -1,18 +1,18 @@
 #include <iostream>
-#include <fstream> 
+#include <fstream>              //載入fstream並從檔案中讀取與寫入資料
 using namespace std;
 
 int main()
 
 {
-	ofstream output;
+	ofstream output;          //將資料寫入output物件
 	
-	output.open("scores.txt");
+	output.open("scores.txt");          //開啟輸出串流
 	
-	output << "john" << " " << "T" << " " << "Smith" << " " << 90 <<endl;
+	output << "john" << " " << "T" << " " << "Smith" << " " << 90 <<endl;         // 將字串與數值寫入於output
 		output << "Eric" << " " << "K" << " " << "Jones" << " " << 85 <<endl;
 	
-	output.close();
+	output.close();                            //關閉串聯物流
 	cout << "Done" << endl;
 	
 	
