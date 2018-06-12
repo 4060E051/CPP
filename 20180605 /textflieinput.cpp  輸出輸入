@@ -1,0 +1,28 @@
+#include <iostream>
+#include <fstream>                            //從檔案中讀取與寫入資料 
+#include <string>                                
+using namespace std;
+
+int main()
+{
+  ifstream input("scores2.txt");             // 讀取檔案中的資料 
+
+  // Read data
+  string firstName;                          // 
+  char mi;                                       //宣告mi為字元 
+  string lastName;
+  int score;                                     //宣告score為整數 
+  input >> firstName >> mi >> lastName >> score;               // 從input物件之中讀取資料 
+  cout << firstName << " " << mi << " " << lastName << " "
+    << score << endl;
+
+  input >> firstName >> mi >> lastName >> score;                                  
+  cout << firstName << " " << mi << " " << lastName << " "
+    << score << endl;
+
+  input.close();                //關閉串聯物流 
+
+  cout << "Done" << endl;         //   顯示列印 Done 
+
+  return 0;
+}
