@@ -1,6 +1,6 @@
 #include <iostream>
-#include <fstream>                            //從檔案中讀取與寫入資料 
-#include <string>                                
+#include <fstream>                        //載入fstream從檔案中讀取與寫入資料 
+#include <string>                             //載入字串    
 using namespace std;
 
 int main()
@@ -8,7 +8,7 @@ int main()
   ifstream input("scores2.txt");             // 讀取檔案中的資料 
 
   // Read data
-  string firstName;                          // 
+  string firstName;                          // 宣告firstname為字串 
   char mi;                                       //宣告mi為字元 
   string lastName;
   int score;                                     //宣告score為整數 
